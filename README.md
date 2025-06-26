@@ -2,8 +2,7 @@
 
 A modern, serverless photography portfolio built with AWS services, featuring AI-powered image processing, secure authentication, and professional admin management.
 
-
-https://github.com/user-attachments/assets/fa5eccea-cad3-4708-b221-6d58126d5bd7
+https://github.com/user-attachments/assets/1118fbc5-ede5-4d45-bf16-0f6f34ed34eb
 
 
 ## 📋 Table of Contents
