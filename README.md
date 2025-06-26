@@ -27,7 +27,6 @@ A modern, serverless photography portfolio built with AWS services, featuring AI
 - [🐛 Troubleshooting Guide](#-troubleshooting-guide)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
 - [📞 Support & Contact](#-support--contact)
 
 ---
@@ -47,7 +46,7 @@ A modern, serverless photography portfolio built with AWS services, featuring AI
 ```
                                     📱 USERS
                     ┌─────────────────┬─────────────────┬─────────────────┐
-                    │   👥 Visitors   │  👑 Admin Users │  👤 Demo Users  │
+                    │   👥 Visitors   │  👑 Admin Users │  👤 Demo Users   │
                     │ (View Portfolio)│(Full Management)│  (Upload Only)  │
                     └─────────────────┴─────────────────┴─────────────────┘
                                               │
@@ -92,7 +91,7 @@ A modern, serverless photography portfolio built with AWS services, featuring AI
     │  │  📋 GET  /api/images      - Retrieve all images with metadata       │   │
     │  │  📊 GET  /api/galleries   - Get gallery statistics & counts         │   │
     │  │  📤 POST /api/upload      - Generate presigned upload URLs          │   │
-    │  │  ✏️  POST /api/admin/update - Update image metadata & featured       │   │
+    │  │  ✏️  POST /api/admin/update - Update image metadata & featured      │   │
     │  │  🗑️  POST /api/admin/delete - Delete images & cleanup               │   │
     │  │  🔒 CORS Configuration   - Cross-origin security                    │   │
     │  │  🚦 Rate Limiting        - API throttling & protection              │   │
@@ -128,27 +127,27 @@ A modern, serverless photography portfolio built with AWS services, featuring AI
     ┌─────────────────────────────────────────────────────────────────────────────┐
     │                            🗄️ STORAGE LAYER                                │
     │  ┌─────────────────────────────────────────────────────────────────────┐   │
-    │  │                         Amazon S3 Buckets                          │   │
+    │  │                         Amazon S3 Buckets                           │   │
     │  │                                                                     │   │
-    │  │  🌐 Web Hosting (photo-portfolio-web-*)                           │   │
+    │  │  🌐 Web Hosting (photo-portfolio-web-*)                             │   │
     │  │     • Static website hosting                                        │   │
     │  │     • HTML, CSS, JavaScript files                                   │   │
     │  │                                                                     │   │
-    │  │  📥 Intake (photo-portfolio-intake-*)                              │   │
+    │  │  📥 Intake (photo-portfolio-intake-*)                               │   │
     │  │     • Raw image uploads                                             │   │
     │  │     • Triggers Lambda processing                                    │   │
     │  │     • Temporary staging area                                        │   │
     │  │                                                                     │   │
-    │  │  🖼️ Gallery (photo-portfolio-img-*)                                │   │
+    │  │  🖼️ Gallery (photo-portfolio-img-*)                                 │   │
     │  │     • Processed & optimized images                                  │   │
     │  │     • CloudFront distribution source                                │   │
     │  │     • Public read access                                            │   │
     │  │                                                                     │   │
-    │  │  📦 Archive (photo-portfolio-archive-*)                            │   │
+    │  │  📦 Archive (photo-portfolio-archive-*)                             │   │
     │  │     • Backup & long-term storage                                    │   │
     │  │     • Disaster recovery                                             │   │
     │  └─────────────────────────────────────────────────────────────────────┘   │
-    │                                                                             │
+    │                                                                            │
     │  ┌─────────────────────────────────────────────────────────────────────┐   │
     │  │                        Amazon DynamoDB                              │   │
     │  │  📊 photography-images table                                        │   │
@@ -169,7 +168,7 @@ A modern, serverless photography portfolio built with AWS services, featuring AI
     │  │  👤 Face Analysis        - Portrait identification                  │   │
     │  │  📝 Text Recognition     - OCR capabilities                         │   │
     │  │  🛡️ Content Moderation   - Safe content filtering                   │   │
-    │  │  🏷️ Auto-Categorization  - Smart gallery organization              │   │
+    │  │  🏷️ Auto-Categorization  - Smart gallery organization               │   │
     │  └─────────────────────────────────────────────────────────────────────┘   │
     └─────────────────────────────────────────────────────────────────────────────┘
                                               │
@@ -737,12 +736,6 @@ chmod +x deploy.sh deploy-cognito.sh
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for complete details.
 
-## 🙏 Acknowledgments
-
-- **☁️ Amazon Web Services**: For providing robust, scalable cloud infrastructure
-- **🤖 Amazon Rekognition**: For powerful AI image analysis capabilities
-- **🌍 Open Source Community**: For inspiration, tools, and best practices
-- **📸 Photography Community**: For showcasing the importance of visual storytelling
 
 ---
 
